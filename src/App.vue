@@ -1,9 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import { useName } from '@/composable/data'
-
-const { name } = useName()
 </script>
 
 <template>
@@ -15,7 +12,7 @@ const { name } = useName()
       {{ name }}
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/nueva">nueva</RouterLink>
+        <RouterLink to="/nueva">registar encuestado</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>

@@ -1,15 +1,6 @@
-<script setup>
-import {ref} from 'vue'
-import { useName } from '@/composable/data'
+<script setup></script>
 
-//const { name } = useName()
-
-//const a = ref(0)
-</script>
-
-
-
-<template>
+<template class="bg-black">
   <div>
     <form @submit.prevent="addItem">
       <input v-model="newItem.name" placeholder="nombre" class="text-red-950" />
@@ -18,13 +9,5 @@ import { useName } from '@/composable/data'
       <input v-model="newItem.barrio" class="text-red-950" placeholder="barrio" />
       <button type="submit">Add</button>
     </form>
-    <ul>
-      <li v-for="(item, index) in items" :key="index">
-        {{ item.name }} {{ item.lastName }} {{ item.documento }} {{ item.barrio }}
-        <a href="#">encuesta1</a>
-      </li>
-    </ul>
   </div>
 </template>
-    soy una nueva vista {{ a }}
-    {{ name }}
